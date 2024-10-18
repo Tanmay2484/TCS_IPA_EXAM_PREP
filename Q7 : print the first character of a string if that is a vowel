@@ -1,0 +1,21 @@
+/******************************************************************************
+print the first character of a string if that is a vowel
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String[] sr=s.split(" ");
+		for(int i=0;i<sr.length;i++){
+		   String word=sr[i];
+		   char ch=word.charAt(0);
+		   if((ch=='a'|| ch=='A')||(ch=='e'|| ch=='E')||(ch=='i'|| ch=='I')||(ch=='o'|| ch=='O')||(ch=='u'|| ch=='U') ){
+		        System.out.print(ch);
+		   }
+		}
+      
+      sc.close();
+	}
+}
