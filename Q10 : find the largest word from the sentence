@@ -1,0 +1,23 @@
+/******************************************************************************
+find the largest word from the sentence 
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+	    String[] sr=s.split(" ");
+	    int ans=0;
+	    String res="";
+	    for(int i=0;i<sr.length;i++){
+	           String word=sr[i];
+	           if(ans<word.length()){
+	               ans=word.length();
+	               res=word;
+	           }
+	    }
+      System.out.println(res);
+      sc.close();
+	}
+}
