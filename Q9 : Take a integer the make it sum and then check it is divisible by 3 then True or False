@@ -1,0 +1,25 @@
+/******************************************************************************
+Take a integer the make it sum and then check it is divisible by 3 then True or False
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	//	String s=sc.nextLine();
+	   int a=sc.nextInt();
+	   int sum=0;
+	   while(a>0){
+	       sum+=a%10;
+	       a/=10;
+	   }
+	   if(sum%3==0){
+	       System.out.println("True");
+	   }
+	   else{
+	        System.out.println("False");
+	   }
+      
+      sc.close();
+	}
+}
