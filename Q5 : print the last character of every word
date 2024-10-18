@@ -1,0 +1,27 @@
+/******************************************************************************
+print the last character of every word
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+	    String temp="",word="";
+		for(int i=0;i<s.length();i++){
+		   if(s.charAt(i)==' '){
+		       char a=word.charAt(word.length()-1);
+		       if((a>='a'&& a<='z')||(a>='A'&& a<='Z'))
+		            temp+=a;
+		       
+		       word="";
+		   }
+		   else{
+		       word+=s.charAt(i);
+		   }
+		}
+		temp+=word.charAt(word.length()-1);
+      System.out.print(temp);
+      sc.close();
+	}
+}
