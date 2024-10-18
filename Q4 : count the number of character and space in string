@@ -1,0 +1,21 @@
+/******************************************************************************
+count the number of character and space in string
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int ans1=0,ans2=0;
+		for(int i=0;i<s.length();i++){
+		   if(s.charAt(i)==' ') 
+		        ans1++;
+		   else if((s.charAt(i)>='a'|| s.charAt(i)<='z')&&(s.charAt(i)>='A'||s.charAt(i)<='Z'))
+		       ans2++;
+		}
+		
+      System.out.print(ans1+" "+ans2);
+      sc.close();
+	}
+}
