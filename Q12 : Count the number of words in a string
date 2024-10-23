@@ -1,0 +1,16 @@
+/******************************************************************************
+Count the number of words in a string
+
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  String s=sc.nextLine();
+	  String[] sr=s.split(" ");
+	  
+	  
+	  System.out.println(sr.length);
+	}
+}
