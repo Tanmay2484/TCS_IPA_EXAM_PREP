@@ -8,9 +8,9 @@ public class Soluation
 	public static void main(String[] args) {
 	  Scanner sc=new Scanner(System.in);
 	  String s=sc.nextLine();
-	  String[] sr=s.split(" ");
+	  String[] sr=s.trim().split("\\s+");// removing the spaces with trim method and strongly spliting 
 	  
 	  
-	  System.out.println(sr.length);
+	  System.out.println("The number of words are :"+sr.length);
 	}
 }
