@@ -1,0 +1,24 @@
+/******************************************************************************
+In a string if you find CHN then reserse the last 3 Characters and print it
+
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  String s=sc.nextLine();
+	  String c="CHN",ans="";
+	  
+	  if(s.contains(c)){
+	      for(int i=s.length()-1;i>=3;i--){
+	         System.out.print(s.charAt(i));
+	      }
+	  }
+	  else{
+	       System.out.println("Nothing");
+	  }
+	  
+	 
+	}
+}
