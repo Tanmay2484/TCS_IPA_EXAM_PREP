@@ -1,0 +1,16 @@
+/******************************************************************************
+Remove a character in a string
+
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  String s=sc.nextLine();
+      String pos=sc.nextLine();
+      String ans=s.replace(pos,"");
+	  
+	  System.out.println(ans);
+	}
+}
