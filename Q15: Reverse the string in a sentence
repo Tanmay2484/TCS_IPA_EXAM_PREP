@@ -1,0 +1,26 @@
+/******************************************************************************
+Reverse the string in a sentence
+
+*******************************************************************************/
+import java.util.*;
+public class Soluation
+{
+	public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  String s=sc.nextLine();
+      String[] sr=s.trim().split("\\s+");
+      String ans="";
+      
+      for(int i=sr.length-1;i>=0;i--){
+          StringBuffer rev=new StringBuffer(sr[i]);
+          rev.reverse();
+          ans+=rev;
+          if(i!=0){
+             ans+=" "; 
+          }
+      }
+      
+	  
+	  System.out.println(ans);
+	}
+}
